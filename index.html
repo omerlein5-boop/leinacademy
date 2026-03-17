@@ -3,85 +3,312 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lein Academy – אקדמיה לאגרוף ופיטנס</title>
+  <title>Lein Academy – אקדמיה לאגרוף | אור יהודה</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="navbar">
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
     <span class="logo">LEIN ACADEMY</span>
-    <a href="https://forms.tofes101.co.il/c/67ee9fc46e4e95a7531332e5/run/" target="_blank" class="btn btn-nav">הצטרף עכשיו</a>
+    <div class="nav-links">
+      <a href="#why">למה אנחנו</a>
+      <a href="#about">על עומר</a>
+      <a href="#training">אימונים</a>
+      <a href="#contact">צור קשר</a>
+    </div>
+    <a href="#contact" class="btn btn-nav">התחל עכשיו</a>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg-text" aria-hidden="true">BOXING</div>
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-sub">אגרוף | פיטנס | אימונים אישיים וקבוצתיים</p>
-      <h1 class="hero-title">תתחיל לאגרף.<br/>תתחיל לשנות.</h1>
-      <a href="https://forms.tofes101.co.il/c/67ee9fc46e4e95a7531332e5/run/" target="_blank" class="btn btn-hero">הצטרף עכשיו</a>
+      <p class="hero-eyebrow">אגרוף קלאסי · אור יהודה</p>
+      <h1 class="hero-title">לא חדר כושר.<br/>מאמן אמיתי.</h1>
+      <p class="hero-desc">אימוני אגרוף קלאסי בפארק — טכניקה, מנטליות, ותוצאות אמיתיות. לכל הרמות.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-hero">התחל לאגרף היום</a>
+        <a href="#why" class="btn btn-ghost">למד עוד ↓</a>
+      </div>
+    </div>
+    <div class="hero-bg-text" aria-hidden="true">BOXING</div>
+  </section>
+
+  <!-- WHY LEIN ACADEMY -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">למה לינ אקדמי</p>
+        <h2 class="section-title">פה מאמנים אחרת.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item fade-in">
+          <div class="why-num">01</div>
+          <h3>מאמן אמיתי, לא אפליקציה</h3>
+          <p>עומר נמצא איתך בכל אימון — רואה, מתקן, מאתגר. תשומת לב אישית בכל שיעור.</p>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-num">02</div>
+          <h3>אגרוף קלאסי, לא פיטנס טיק-טוק</h3>
+          <p>טכניקה נכונה, כלי אמיתי, ביטחון שנשאר. לא סרטוני אינסטגרם — אגרוף של ממש.</p>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-num">03</div>
+          <h3>בחוץ. בפארק. באמת.</h3>
+          <p>אין מכונות, אין מיזוג מיותר. אימון בפארק שמשאיר אותך בחיים ומוציא ממך את הטוב ביותר.</p>
+        </div>
+        <div class="why-item fade-in">
+          <div class="why-num">04</div>
+          <h3>קבוצות קטנות בלבד</h3>
+          <p>אתה לא נעלם בתוך קבוצה של 30. כאן כולם מקבלים זמן, תיקון, ותוצאות.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="section" id="services">
+  <!-- WHO IT'S FOR -->
+  <section class="section section-alt" id="for-who">
     <div class="container">
-      <h2 class="section-title">מה אנחנו מציעים</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon">🥊</div>
-          <h3>אימון קבוצתי</h3>
-          <p>אימונים קבוצתיים בפארק — אנרגיה גבוהה, אווירה מטורפת, תוצאות אמיתיות. מתאים לכל הרמות.</p>
+      <div class="section-header center">
+        <p class="eyebrow">למי זה מתאים</p>
+        <h2 class="section-title">לך.</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card fade-in">
+          <div class="audience-icon">🥊</div>
+          <h3>מתחילים</h3>
+          <p>מעולם לא אגרפת? מושלם. מתחילים מאפס עם בסיס טכני חזק ובלי שיפוטיות.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3>אימון אישי</h3>
-          <p>תוכנית אימון מותאמת אישית — על הגוף שלך, על הקצב שלך, עם תשומת לב מלאה עליך.</p>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">🔥</div>
+          <h3>מחפשי כושר אמיתי</h3>
+          <p>נמאס לך מריצה על הליכון? אגרוף שורף, מאתגר, ומשאיר אותך רוצה עוד.</p>
         </div>
-        <div class="card">
-          <div class="card-icon">💪</div>
-          <h3>פיטנס ואגרוף</h3>
-          <p>שילוב של אגרוף ואימוני כוח שישפר לך את הכוח, הסיבולת והביטחון העצמי.</p>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">🧠</div>
+          <h3>מי שצריך לפרוק</h3>
+          <p>סטרס מהעבודה, מהחיים, מהכל? יש תרופה. נקראת אגרוף.</p>
+        </div>
+        <div class="audience-card fade-in">
+          <div class="audience-icon">💪</div>
+          <h3>מי שרוצה ביטחון</h3>
+          <p>הביטחון לא מגיע מהמראה בלבד — מגיע כשאתה יודע שאתה מסוגל. כאן תגלה את זה.</p>
         </div>
       </div>
-      <div class="join-cta">
-        <a href="https://forms.tofes101.co.il/c/67ee9fc46e4e95a7531332e5/run/" target="_blank" class="btn btn-primary">צור קשר להצטרפות</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-image-placeholder">
+          <div class="about-img-inner">
+            <p>📸</p>
+            <p>תמונה של עומר</p>
+            <p style="font-size:0.8rem;color:#666;margin-top:8px;">להחליף בתמונה אמיתית</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">על המאמן</p>
+          <h2 class="section-title">עומר לין.</h2>
+          <p class="about-lead">אני לא מוכר לך חלום. אני מציע לך עבודה אמיתית.</p>
+          <p class="about-body">אני עומר לין, מאמן אגרוף קלאסי באור יהודה. האגרוף לימד אותי משמעת, ריכוז, וביטחון — ואני כאן כדי להעביר את זה הלאה.</p>
+          <p class="about-body">כל מי שמגיע לאימון אצלי יוצא עם יותר מסתם אימון גוף. יוצא עם משהו שנשאר.</p>
+          <a href="https://www.instagram.com/leinacademy" target="_blank" class="btn btn-outline-red">↗ @leinacademy באינסטגרם</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING OPTIONS -->
+  <section class="section section-alt" id="training">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">אפשרויות אימון</p>
+        <h2 class="section-title">בחר את הדרך שלך.</h2>
+      </div>
+      <div class="training-grid">
+        <div class="training-card featured fade-in">
+          <div class="training-badge">הכי פופולרי</div>
+          <div class="training-icon">👥</div>
+          <h3>אימון קבוצתי</h3>
+          <p>אנרגיה קבוצתית, מאמן אישי. אימון בפארק עם חברה אמיתית ותחרותיות בריאה.</p>
+          <ul class="training-features">
+            <li>קבוצות קטנות בלבד</li>
+            <li>כל הרמות מוזמנות</li>
+            <li>אווירה שמושכת אותך חזרה</li>
+          </ul>
+          <a href="#contact" class="btn btn-hero">הצטרף לקבוצה</a>
+        </div>
+        <div class="training-card fade-in">
+          <div class="training-icon">⚡</div>
+          <h3>אימון אישי</h3>
+          <p>תשומת לב מלאה. תוכנית מותאמת. תוצאות מהירות יותר.</p>
+          <ul class="training-features">
+            <li>אימון מותאם לך לחלוטין</li>
+            <li>קצב שמתאים לך</li>
+            <li>פרטיות ומיקוד מוחלט</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">צור קשר לפרטים</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SCHEDULE -->
-  <section class="section section-dark" id="schedule">
+  <section class="section schedule-section" id="schedule">
     <div class="container center">
-      <h2 class="section-title">לוח אימונים</h2>
-      <p class="coming-soon-text">לוח זמנים בקרוב 🗓️</p>
-      <p class="coming-soon-sub">עוקבים אחרינו באינסטגרם ומתעדכנים ראשונים</p>
-      <a href="https://www.instagram.com/leinacademy" target="_blank" class="btn btn-outline">@leinacademy</a>
+      <p class="eyebrow">לוח אימונים</p>
+      <h2 class="section-title">לוח זמנים — בקרוב.</h2>
+      <p class="schedule-sub">עקוב אחרינו באינסטגרם לעדכון ראשון על פתיחת הלוח</p>
+      <a href="https://www.instagram.com/leinacademy" target="_blank" class="btn btn-outline">עקוב @leinacademy</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="section-header center">
+        <p class="eyebrow">מה אומרים המתאמנים</p>
+        <h2 class="section-title">תוצאות אמיתיות.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"הגעתי בלי ניסיון ובלי כושר. אחרי חודשיים אני לא מזהה את עצמי."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">מ</div>
+            <div>
+              <strong>מתן כ.</strong>
+              <span>אימון קבוצתי</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"עומר לא רק מלמד אגרוף — הוא מלמד אותך להאמין בעצמך. שינה לי משהו."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">ד</div>
+            <div>
+              <strong>דניאל ר.</strong>
+              <span>אימון אישי</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"הכושר הטוב ביותר שעשיתי בחיים. כל שבוע אני מחכה לאימון הבא."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">י</div>
+            <div>
+              <strong>יובל ס.</strong>
+              <span>אימון קבוצתי</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">שאלות נפוצות</p>
+        <h2 class="section-title">יש לך שאלות?</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">האם צריך ניסיון קודם באגרוף?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a">בכלל לא. רוב המתאמנים שלי הגיעו בלי ניסיון. מתחילים מהבסיס ובונים טכניקה נכונה מהיום הראשון.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">מה צריך להביא לאימון?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a">נעלי ספורט, בגדי אימון נוחים, ובקבוק מים. ציוד אגרוף ניתן לסדר בתיאום.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">כמה אנשים בקבוצה?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a">הקבוצות קטנות בכוונה. כך כל מתאמן מקבל תשומת לב ותיקון אישי.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">איפה מתקיימים האימונים?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a">בפארק נווה רבין, אור יהודה. אוויר פתוח, סביבה נעימה, בלי ריח של חדר כושר.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">איך מצטרפים?<span class="faq-arrow">↓</span></button>
+          <div class="faq-a">ממלאים את הטופס בתחתית הדף או שולחים הודעה בווצאפ. עומר חוזר תוך שעות ספורות.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FINAL CTA -->
+  <section class="section cta-section" id="contact">
+    <div class="container">
+      <div class="cta-wrap">
+        <div class="cta-text">
+          <p class="eyebrow">מוכן להתחיל?</p>
+          <h2 class="cta-title">האימון הראשון<br/>מתחיל כאן.</h2>
+          <p class="cta-sub">השאר פרטים ועומר יחזור אליך תוך שעות ספורות.</p>
+          <div class="cta-contact-links">
+            <a href="https://wa.me/972527243891" target="_blank" class="contact-link whatsapp-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              שלח הודעה בווצאפ
+            </a>
+            <a href="tel:0527243891" class="contact-link">📞 052-724-3891</a>
+          </div>
+        </div>
+        <div class="form-wrap">
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="398a4ad2-3beb-41ab-a5b5-4064a93073b7" />
+            <input type="hidden" name="subject" value="פנייה חדשה – Lein Academy" />
+            <input type="hidden" name="from_name" value="Lein Academy Website" />
+            <div class="form-group">
+              <input type="text" name="name" placeholder="שם מלא *" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="טלפון *" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="אימייל" />
+            </div>
+            <div class="form-group">
+              <select name="type">
+                <option value="">סוג אימון...</option>
+                <option value="קבוצתי">אימון קבוצתי</option>
+                <option value="אישי">אימון אישי</option>
+                <option value="לא יודע">עדיין לא יודע</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-hero form-submit">שלח — ועומר יחזור אליך 🥊</button>
+            <p class="form-success" id="formSuccess">✅ קיבלנו! נחזור אליך בקרוב.</p>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- LOCATION -->
-  <section class="section" id="location">
+  <section class="section section-alt" id="location">
     <div class="container">
-      <h2 class="section-title">איפה אנחנו?</h2>
       <div class="location-wrap">
         <div class="location-info">
-          <p class="location-name">📍 פארק נווה רבין, אור יהודה</p>
-          <p class="location-desc">האימונים מתקיימים בפארק — בחוץ, באוויר הפתוח, עם אנרגיה אמיתית.</p>
-          <a href="https://maps.google.com/?q=פארק+נווה+רבין+אור+יהודה" target="_blank" class="btn btn-outline">פתח במפה</a>
+          <p class="eyebrow">מיקום</p>
+          <h2 class="section-title">פארק נווה רבין,<br/>אור יהודה.</h2>
+          <p class="location-desc">אימונים בחוץ, באוויר הפתוח. בלי חדר כושר סגור, בלי מכונות.</p>
+          <a href="https://maps.google.com/?q=פארק+נווה+רבין+אור+יהודה" target="_blank" class="btn btn-outline">פתח במפה ↗</a>
         </div>
         <div class="map-embed">
           <iframe
             src="https://maps.google.com/maps?q=פארק+נווה+רבין+אור+יהודה&output=embed&z=15"
-            width="100%"
-            height="280"
-            style="border:0; border-radius: 12px;"
-            allowfullscreen=""
-            loading="lazy"
+            width="100%" height="320"
+            style="border:0; border-radius:16px;"
+            allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="מפה - פארק נווה רבין אור יהודה"
           ></iframe>
@@ -90,62 +317,44 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
-  <section class="section cta-banner" id="contact">
-    <div class="container">
-      <div class="center">
-        <h2 class="cta-title">מוכן להתחיל?</h2>
-        <p class="cta-sub">השאר פרטים ונחזור אליך בהקדם</p>
-      </div>
-      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-        <input type="hidden" name="access_key" value="398a4ad2-3beb-41ab-a5b5-4064a93073b7" />
-        <input type="hidden" name="subject" value="פנייה חדשה – Lein Academy" />
-        <input type="hidden" name="from_name" value="Lein Academy Website" />
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">שם מלא</label>
-            <input type="text" id="name" name="name" placeholder="ישראל ישראלי" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">טלפון</label>
-            <input type="tel" id="phone" name="phone" placeholder="050-000-0000" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="email">אימייל</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" />
-          </div>
-          <div class="form-group">
-            <label for="type">סוג אימון</label>
-            <select id="type" name="type">
-              <option value="">בחר...</option>
-              <option value="קבוצתי">אימון קבוצתי</option>
-              <option value="אישי">אימון אישי</option>
-              <option value="לא יודע">עדיין לא יודע</option>
-            </select>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-hero form-submit">שלח פרטים</button>
-        <p class="form-success" id="formSuccess">✅ קיבלנו! נחזור אליך בקרוב.</p>
-      </form>
-    </div>
-  </section>
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span class="logo">LEIN ACADEMY</span>
+      <div class="footer-brand">
+        <span class="logo">LEIN ACADEMY</span>
+        <p>אגרוף קלאסי | אור יהודה</p>
+      </div>
       <div class="footer-links">
-        <a href="https://www.instagram.com/leinacademy" target="_blank">📸 @leinacademy</a>
-        <a href="tel:0527243891">📞 052-724-3891</a>
-        <a href="mailto:omerlein5@gmail.com">✉️ omerlein5@gmail.com</a>
+        <a href="https://www.instagram.com/leinacademy" target="_blank">Instagram @leinacademy</a>
+        <a href="tel:0527243891">052-724-3891</a>
+        <a href="mailto:omerlein5@gmail.com">omerlein5@gmail.com</a>
       </div>
       <p class="footer-copy">© 2025 Lein Academy. כל הזכויות שמורות.</p>
     </div>
   </footer>
 
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/972527243891" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- STICKY MOBILE CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#contact" class="btn btn-hero sticky-btn">התחל לאגרף עכשיו 🥊</a>
+  </div>
+
   <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Contact form
     document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
       const btn = this.querySelector('.form-submit');
@@ -163,6 +372,27 @@
         btn.disabled = false;
       }
     });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Sticky CTA — hide when contact section visible
+    const observer = new IntersectionObserver((entries) => {
+      const stickyCta = document.getElementById('stickyCta');
+      stickyCta.style.opacity = entries[0].isIntersecting ? '0' : '1';
+      stickyCta.style.pointerEvents = entries[0].isIntersecting ? 'none' : 'auto';
+    });
+    observer.observe(document.getElementById('contact'));
+
+    // Fade-in on scroll
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
   </script>
 </body>
 </html>
