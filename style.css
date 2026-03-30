@@ -273,6 +273,49 @@ h1, h2, h3 { font-weight: 900; line-height: 1.05; }
   flex-wrap: wrap;
 }
 
+/* ========== TRUST BAR ========== */
+.trust-bar {
+  background: var(--dark);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 28px 0;
+}
+
+.trust-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 48px;
+}
+
+.trust-icon { font-size: 1.4rem; }
+
+.trust-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.3px;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+}
+
+@media (max-width: 640px) {
+  .trust-divider { display: none; }
+  .trust-item { padding: 10px 24px; }
+}
+
 /* ========== WHY GRID ========== */
 .why-grid {
   display: grid;
