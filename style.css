@@ -279,15 +279,16 @@ img { max-width: 100%; display: block; }
 /* ABOUT */
 .about-wrap {
   display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 72px;
+  grid-template-columns: 300px 1fr;
+  gap: 56px;
   align-items: center;
 }
 
 .about-img-wrap {
   border-radius: 20px;
   overflow: hidden;
-  aspect-ratio: 3/4;
+  aspect-ratio: 2/3;
+  max-height: 440px;
   border: 1px solid var(--border);
 }
 
