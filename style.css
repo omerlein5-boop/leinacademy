@@ -419,14 +419,16 @@ img { max-width: 100%; display: block; }
 
 /* LOGO IMAGE */
 .logo-img {
-  height: 48px;
-  width: auto;
+  height: 52px;
+  width: 52px;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .footer-logo {
-  height: 56px;
-  opacity: 0.85;
+  height: 72px;
+  width: 72px;
+  opacity: 0.9;
 }
 
 /* GALLERY */
