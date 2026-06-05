@@ -502,6 +502,12 @@ img { max-width: 100%; display: block; }
   gap: 20px;
 }
 
+.pricing-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .pricing-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -774,7 +780,7 @@ img { max-width: 100%; display: block; }
   .about-wrap { grid-template-columns: 1fr; gap: 40px; }
   .about-img-wrap { max-width: 380px; }
   .testimonials { grid-template-columns: 1fr; }
-  .pricing-grid { grid-template-columns: 1fr; gap: 16px; }
+  .pricing-grid, .pricing-grid-2 { grid-template-columns: 1fr; gap: 16px; }
   .contrast-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
