@@ -496,6 +496,71 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
+/* COMPARISON */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.comparison-col {
+  border-radius: 18px;
+  padding: 36px 32px;
+}
+
+.comparison-theirs {
+  background: var(--card);
+  border: 1px solid var(--border);
+  opacity: 0.75;
+}
+
+.comparison-ours {
+  background: #130909;
+  border: 2px solid var(--red);
+}
+
+.comparison-title {
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  letter-spacing: -0.1px;
+}
+
+.comparison-theirs .comparison-title { color: var(--gray); }
+.comparison-ours .comparison-title { color: var(--white); }
+
+.comparison-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.comparison-item {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.comparison-item::before {
+  flex-shrink: 0;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+.comparison-bad { color: var(--gray); }
+.comparison-bad::before { content: '✕'; color: #555; }
+
+.comparison-good { color: var(--light); }
+.comparison-good::before { content: '✓'; color: var(--gold); }
+
+/* WHAT ITEM WIDE */
+.what-item-wide {
+  grid-column: 1 / -1;
+}
+
 /* PRICING */
 .pricing-grid {
   display: grid;
@@ -777,6 +842,11 @@ img { max-width: 100%; display: block; }
 }
 
 /* RESPONSIVE */
+@media (max-width: 700px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+  .comparison-theirs { opacity: 1; }
+}
+
 @media (max-width: 860px) {
   .about-wrap { grid-template-columns: 1fr; gap: 40px; }
   .about-img-wrap { max-width: 380px; }
