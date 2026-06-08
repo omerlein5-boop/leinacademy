@@ -188,7 +188,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 32px;
+  padding: 12px 32px;
   transition: background 0.3s, padding 0.3s;
 }
 .navbar.scrolled {
@@ -200,11 +200,11 @@ img { max-width: 100%; display: block; }
 
 /* LOGO */
 .logo-img {
-  height: 200px;
+  height: 52px;
   width: auto;
   object-fit: contain;
 }
-.footer-logo { height: 220px; width: auto; opacity: 0.85; }
+.footer-logo { height: 140px; width: auto; opacity: 0.85; }
 
 /* HERO */
 .hero {
