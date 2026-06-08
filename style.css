@@ -200,11 +200,11 @@ img { max-width: 100%; display: block; }
 
 /* LOGO */
 .logo-img {
-  height: 100px;
+  height: 200px;
   width: auto;
   object-fit: contain;
 }
-.footer-logo { height: 110px; width: auto; opacity: 0.85; }
+.footer-logo { height: 220px; width: auto; opacity: 0.85; }
 
 /* HERO */
 .hero {
